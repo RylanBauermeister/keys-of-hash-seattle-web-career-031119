@@ -4,5 +4,9 @@ class Hash
     result = []
     self.each do |key, value|
       if arguments.include?(value)
+        result << key
+      end
+    end
+    result
   end
 end
